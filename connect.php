@@ -30,14 +30,24 @@
          time_schedule VARCHAR(255) NOT NULL,
          lecturer VARCHAR(255) NOT NULL
      );
+
      ";
+
+     $sql_create_tableUs = "
+      CREATE TABLE users (
+         user_id INT AUTO_INCREMENT PRIMARY KEY,
+         user_name VARCHAR(255) NOT NULL,
+         user_sername VARCHAR(255) NOT NULL,
+         user_mail VARCHAR(255) NOT NULL
+     );";
+
      $sql_insert = "INSERT INTO courses (course_name, time_schedule, lecturer) VALUES
      ('java', 'Понедельник, 14:00-16:00', 'Иванов Иван'),
      ('python', 'Среда, 10:00-12:00', 'Петров Петр'),
      ('javascript', 'Пятница, 16:00-18:00', 'Сидоров Алексей');
      ";
 
-   //   if ($mysqli->query($sql_create_table) === TRUE) {
+   //   if ($mysqli->query($sql_create_tableUs) === TRUE) {
    //       echo "<br> Table created successfully";
    //    } else {
    //       echo "Error creating table:  " . $mysqli->error;
