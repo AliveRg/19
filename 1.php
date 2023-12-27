@@ -21,6 +21,15 @@
            text-align: left;
        }
    </style>";
+
+   ?>
+
+
+   <!-- тут будет выводиться имя пользователя почта -->
+
+   <a href="logout.php">Выход</a>
+   <?php
+   
    $str = "Здравствуйте, " . $_REQUEST["first_name"] . " " . $_REQUEST["last_name"] . "! <br>";
    $str .= "Вы выбрали для изучения курсы по:<br>";
    
